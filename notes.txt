@@ -1,0 +1,39 @@
+How to set up
+
+* Go to https://discord.com/developers/applications/
+* Click create application and give bot name
+* Choose bot image/icon
+* Go to Bot tab
+* Add bot to application
+* Go to OAuth2 URL Generator and choose "bot" scope and whatever bot permissions you'd like
+* Copy URL generated below
+	* Note this URL and tab is never saved and must be redone each time you'd like to share the bot to another server
+* Got to URL in browser
+	* Select the server you'd like to add the bot to
+	* Check permissions
+	* Complete until "you may close this tab" and it says bot is authorized
+	* Bot should show up/join the discord server
+
+* Go to repl.it and log in
+* New repl
+* Choose Node.js as format/language
+* Name repl whatever such as [bot name], doesn't matter
+* Create repl
+Note: repl automatically downloads/install (npm ...) dependencies from run file, but repl's version of Node.js is not modern enough for discord.js, so resuse old package.json and package-lock.json files here from older version of discord.js
+
+
+* For constant activation/continuously active bot note server.js file in this repl and the corresponding module import/require in index.js
+* Run index.js to pull up browser window within repl workspace and copy link in top right
+* Go to https://uptimerobot.com and log in
+* On UptimeRobot add new Monitor
+	* Monitor type: HTTP(s)
+	* Friendly Name: [Bot name] but shouldn't matter
+	* URL or IP: paste URL
+	* Monitor interval: 5 min
+	* Monitor timeout: can be left on default (30 sec)
+	Optional: opt in to alert notications to email about monitor (if something happens or goes wrong)
+
+
+
+
+
