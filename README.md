@@ -17,7 +17,7 @@ Above: Demonstrating (1) "Remembered Rolls" database use with custom roll comman
 ## Discord bot database and constant operation
 This discord bot is hosted on [Replit](https://replit.com) within a Node.js Repl. It uses Replit's optional built-in database to host and manage the bot's "Remembered Rolls" list. I also use a Replit Secret (environment variable) to protect the bots private token.
 
-In order to keep this bot running even while I'm not logged in to Replit, I've used Replit's Express webserver capabilities where I host Dice Tower's code. To ensure Replit never closes this temporary webserver, I've created a monitor on [UptimeRobot](https://uptimerobot.com/) to make a request every five-minutes at the webserver URL.
+In order to keep this bot running even while I'm not logged in to Replit, I've used Replit's Express webserver capabilities where I host Dice Tower's code. To ensure Replit never closes this temporary webserver, I've created a monitor on [UptimeRobot](https://uptimerobot.com/) to make a request every five minutes at the webserver URL.
 
 #### Inspired by freeCodeCamp
 [freeCodeCamp Video](https://youtu.be/7rU_KyudGBY)
